@@ -1,181 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>CONECTA - Actividades para crear vínculos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>CONECTA - Actividades para crear vínculos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ESTILOS -->
-    <style>
-        body {
-            font-family: Calibri, Arial, sans-serif;
-            margin: 0;
-            background-color: #cebb95;
-            color: #000;
-        }
-
-        header {
-            background-color: #cebb95;
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 1px solid #ccc;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-
-        header p {
-            font-style: italic;
-            margin: 10px 0 20px 0;
-            font-size: 1.2em;
-        }
-
-        nav {
-            background-color: #ddd5c8;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            border-bottom: 1px solid #bbb;
-        }
-
-        nav a {
-            color: #000;
-            padding: 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            background-color: #cfc7ba;
-        }
-
-        section {
-            padding: 40px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .boton {
-            display: inline-block;
-            padding: 12px 20px;
-            background-color: #d6cebf;
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 5px;
-            border: 1px solid #aaa;
-        }
-
-        .boton:hover {
-            background-color: #c9c1b2;
-        }
-
-       .actividad {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f5f0e6;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    gap: 20px;
+<style>
+body {
+font-family: Calibri, Arial, sans-serif;
+margin:0;
+background-color:#cebb95;
+color:#000;
 }
 
-.actividad-texto {
-    flex: 2;
+header {
+padding:40px 20px;
+text-align:center;
 }
 
-.actividad-imagen {
-    flex: 1;
+nav {
+background:#ddd5c8;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
 }
+
+nav a {
+padding:15px;
+font-weight:bold;
+text-decoration:none;
+color:black;
+}
+
+.boton {
+padding:12px 20px;
+background:#d6cebf;
+border-radius:5px;
+margin:5px;
+display:inline-block;
+border:1px solid #aaa;
+font-weight:bold;
+color:black;
+text-decoration:none;
+}
+
+section {
+padding:40px;
+max-width:1000px;
+margin:auto;
+}
+
+.caja-seccion {
+background:#cfe9f5;
+border-radius:12px;
+padding:30px;
+margin-bottom:40px;
+box-shadow:0 4px 8px rgba(0,0,0,.1);
+}
+
+.actividad {
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#f5f0e6;
+border-radius:12px;
+padding:20px;
+margin-bottom:20px;
+box-shadow:0 4px 8px rgba(0,0,0,.1);
+gap:20px;
+}
+
+.actividad-texto { flex:2; }
+.actividad-imagen { flex:1; }
 
 .actividad-imagen img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 10px;
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:10px;
 }
 
+footer {
+background:#ddd5c8;
+text-align:center;
+padding:20px;
+}
 
-        footer {
-            background-color: #ddd5c8;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            border-top: 1px solid #bbb;
-        }
-    </style>
+label { font-weight:bold; display:block; margin-top:10px; }
+
+input, textarea {
+width:100%;
+padding:8px;
+margin-top:5px;
+}
+</style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-    <h1>CONECTA</h1>
-    <p><em>Actividades para crear vínculos</em></p>
-    <a href="#encuesta" class="boton">Haz la encuesta</a>
-    <a href="#actividades" class="boton">Actividades</a>
+<h1>CONECTA</h1>
+<p></em><strong>Actividades para crear vínculos</strong></em></p>
+<a href="#encuesta" class="boton"><strong>Haz la encuesta</strong></a>
+<a href="#actividades" class="boton"><strong>Actividades</strong></a>
 </header>
 
-<!-- NAVEGACIÓN -->
 <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#quienes">Quiénes somos</a>
-    <a href="#encuesta">Encuesta</a>
-    <a href="#actividades">Actividades</a>
-    <a href="#contacto">Contacto</a>
+<a href="#inicio">Inicio</a>
+<a href="#quienes">Quiénes somos</a>
+<a href="#encuesta">Encuesta</a>
+<a href="#actividades">Actividades</a>
+<a href="#contacto">Contacto</a>
 </nav>
 
-<!-- INICIO -->
-<section id="inicio" style="position: relative; padding: 0;">
+<section id="inicio">
 
-    <!-- LOGO -->
+       <!-- LOGO -->
     <img src="Logo Conectaactividades.png"
-         style="position: absolute; top: -270px; right: -200px; width: 120px; z-index: 2;">
+         style="position: absolute; top: 50px; right: 30px; width: 120px; z-index: 2;">
 
-    <!-- IMAGEN PRINCIPAL -->
-    <img src="Imagen principal conectaactividades.png"
-         style="width: 100%; height: 700px; object-fit: cover; margin-top: 50px;">
-
-    <div style="padding: 40px; max-width: 1000px; margin: auto;">
-
-<!-- QUIÉNES SOMOS -->
-<section id="quienes">
-    <h2>Quiénes somos</h2>
-    <p>
-        <strong>Conecta</strong> es un proyecto académico cuyo objetivo es
-            fomentar la creación de vínculos sociales significativos a través de actividades grupales,
-            presenciales y online, adaptadas a diferentes rangos de edad.
-    </p>
-    <p>
-        <strong>Equipo:</strong><br>
-        Carlota Dalmau Llovell<br>
-        Álvaro Fortuny Martínez
-    </p>
+<img src="Imagen principal conectaactividades.png" style="width:100%;height:700px;object-fit:cover;">
 </section>
 
-<!-- ENCUESTA -->
-<section id="encuesta">
-    <h2>Encuesta</h2>
-    <p>
-        La encuesta nos permite conocer los intereses, necesidades sociales y preferencias de las personas
-        participantes para diseñar actividades adaptadas a diferentes edades y perfiles.
-    </p>
-    <a href="https://forms.gle/SvuYxfQB3dUdVv2c8" target="_blank" class="boton">
-        Acceder a la encuesta
-    </a>
+<section id="quienes" class="caja-seccion">
+<h2>Quiénes somos</h2>
+<p><strong>Conecta</strong> es un proyecto académico para fomentar vínculos sociales que nace a partir del problema de la soledad 
+    y falta de relaciones sociales profundas en adolescentes, adultos y personas de la tercera edad.</p>
+<p><strong>Equipo:</strong><br>Carlota Dalmau Llovell<br>Álvaro Fortuny Martínez</p>
+</section>
+
+<section id="encuesta" class="caja-seccion">
+<h2>Encuesta</h2>
+<p>La encuesta permite adaptar actividades a cada perfil.</p>
+<a href="https://forms.gle/SvuYxfQB3dUdVv2c8" target="_blank" class="boton"><strong>Acceder a la encuesta</strong></a>
 </section>
 
 <!-- ACTIVIDADES -->
-<section id="actividades">
-    <h2>Actividades</h2>
-    <p>
+<section id="actividades" class="caja-seccion">
+<h2>Actividades</h2>
+<p>
         Las actividades se organizan por ámbitos y rangos de edad con el objetivo de
         favorecer la creación de relaciones sociales significativas.
     </p>
+<option value="todas">Todas</option>
+<option value="18-25">18–25</option>
+<option value="26-35">26–35</option>
+<option value="36-45">36–45</option>
+<option value="46-60">46–60</option>
+<option value="+60">+60</option>
+</select>
 
     <!-- FILTRO -->
     <div class="filtros">
@@ -1039,44 +1012,34 @@
 
 
 <!-- CONTACTO -->
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p>
-        Puedes escribirnos para participar o resolver dudas. Te responderemos personalmente
-        y, si lo deseas, podremos concertar una breve videollamada.
-    </p>
+<section id="contacto" class="caja-seccion">
+<h2>Contacto</h2>
 
-    <form>
-        <label>Nombre</label>
-        <input type="text" placeholder="Tu nombre">
+<form>
+<label><strong>Nombre</strong></label>
+<input type="text">
 
-        <label>Email</label>
-        <input type="email" placeholder="Tu email">
+<label><strong>Email</strong></label>
+<input type="email">
 
-        <label>Mensaje</label>
-        <textarea placeholder="Cuéntanos qué actividades te gustaría hacer, tu edad, etc."></textarea>
+<label><strong>Mensaje</strong></label>
+<textarea></textarea>
 
-        <button type="submit">Enviar</button>
-    </form>
+<br><br>
+<button type="submit">Enviar</button>
+</form>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 Conecta · Proyecto académico</p>
+© 2026 Conecta · Proyecto académico
 </footer>
 
-<!-- SCRIPT FILTROS -->
 <script>
-    function filtrarEdad(edad) {
-        const actividades = document.querySelectorAll('.actividad');
-        actividades.forEach(act => {
-            if (edad === 'todas' || act.dataset.edad === edad) {
-                act.style.display = 'block';
-            } else {
-                act.style.display = 'none';
-            }
-        });
-    }
+function filtrarEdad(edad){
+document.querySelectorAll('.actividad').forEach(a=>{
+a.style.display=(edad==="todas"||a.dataset.edad===edad)?"flex":"none";
+});
+}
 </script>
 
 </body>
